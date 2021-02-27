@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Feb 2021 pada 14.46
+-- Waktu pembuatan: 27 Feb 2021 pada 14.54
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.4
 
@@ -20,6 +20,18 @@ SET time_zone = "+00:00";
 --
 -- Database: `pstadm_infixhost_wp429`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_admin`
+--
+
+CREATE TABLE `tbl_admin` (
+  `id_admin` int(11) NOT NULL,
+  `username_admin` varchar(64) NOT NULL,
+  `password_admin` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -102,6 +114,12 @@ CREATE TABLE `tbl_sosmed` (
 --
 
 --
+-- Indeks untuk tabel `tbl_admin`
+--
+ALTER TABLE `tbl_admin`
+  ADD PRIMARY KEY (`id_admin`,`username_admin`);
+
+--
 -- Indeks untuk tabel `tbl_api`
 --
 ALTER TABLE `tbl_api`
@@ -128,6 +146,12 @@ ALTER TABLE `tbl_service`
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_admin`
+--
+ALTER TABLE `tbl_admin`
+  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_api`
