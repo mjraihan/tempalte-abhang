@@ -69,6 +69,6 @@
 	</div>
 </div>
 
-<div class="section">
+<div class="section pb-0">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.723245780249!2d106.8637283153829!3d-6.1678026621634645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5066114a11b%3A0x5f81b16f5a45f2c3!2sPT.%20Prima%20Sistem%20Terpadu%20(PST)!5e0!3m2!1sen!2sid!4v1614395033058!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
