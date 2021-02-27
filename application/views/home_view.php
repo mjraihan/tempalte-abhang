@@ -58,67 +58,8 @@
 				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
-				<div class="service text-center">
-					<span class="flaticon-pie-chart"></span>
-					<div>
-						<h3>On Time Service</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						<p><a href="#" class="btn btn-outline-primary py-2 px-4">Read more</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-				<div class="service text-center">
-					<span class="flaticon-phone-call"></span>
-					<div>
-						<h3>On Time Service</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						<p><a href="#" class="btn btn-outline-primary py-2 px-4">Read more</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-				<div class="service text-center">
-					<span class="flaticon-money"></span>
-					<div>
-						<h3>On Time Service</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						<p><a href="#" class="btn btn-outline-primary py-2 px-4">Read more</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-				<div class="service text-center">
-					<span class="flaticon-financial"></span>
-					<div>
-						<h3>On Time Service</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						<p><a href="#" class="btn btn-outline-primary py-2 px-4">Read more</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-				<div class="service text-center">
-					<span class="flaticon-security"></span>
-					<div>
-						<h3>On Time Service</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						<p><a href="#" class="btn btn-outline-primary py-2 px-4">Read more</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-				<div class="service text-center">
-					<span class="flaticon-savings"></span>
-					<div>
-						<h3>On Time Service</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						<p><a href="#" class="btn btn-outline-primary py-2 px-4">Read more</a></p>
-					</div>
-				</div>
-			</div>
+		<div class="row" id="service-show">
+
 		</div>
 	</div>
 </div>
@@ -215,8 +156,31 @@
 
 <script>
 	$(document).ready(function() {
+		var arrService = [{title: "SAP ERP IMPLEMENTATION"},{title: "ORACLE APPLICATION DESIGN AND DEVELOPMENT"},{title: "BUSINESS PROCESS REENGINEERING"},{title: "STRATEGIC INFORMATION PLANNING"},{title: "IT OUTSOURCING"},{title: "SAP CERTIFIED"},]
 		var arrClient = [{},{},{},{},{},{},]
 		var arrContent = [{},{},{},]
+
+		function showService() {
+			let htmlService = '';
+
+			arrService.forEach((item, index) => {
+				htmlService += `
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
+						<div class="service text-center">
+							<img src="<?= THEMES_SITE ?>/images/service/${index+1}.png" class="service-img mb-4" alt="">
+							<div>
+								<h3 class="service-title">${item.title}</h3>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+								<p><a href="#" class="btn btn-outline-primary py-2 px-4">Read more</a></p>
+							</div>
+						</div>
+					</div>
+				`;
+			});
+
+			$('#service-show').html(htmlService);			
+		}
+
 		function showClient() {
 			let htmlClient = '';
 
@@ -265,7 +229,7 @@
 				});
 			}
 		};
-		
+
 		function showContent() {
 		 let htmlContent = '';
 
@@ -290,6 +254,8 @@
 
 		 $('#content').prepend(htmlContent);
 		};
+
+		showService();
 	    showClient();
 	    showContent();
 	});

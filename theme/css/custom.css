@@ -110,6 +110,24 @@
   margin-bottom: 50px;
   background: #fff; 
 }
+.service:hover .service-img {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+.service:hover .service-title{
+  color: #0099e5 !important;
+  transition: 0.5s;
+}
+.service-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.service-title {
+  min-height: 45px;
+}
 .service [class^="flaticon-"] {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 60px;
