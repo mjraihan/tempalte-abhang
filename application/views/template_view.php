@@ -75,8 +75,8 @@
 										</li>
 									</ul>
 								</li>
-								<li><a href="services.html">Page List</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="<?= base_url() ?>pagelist">Page List</a></li>
+								<li><a href="<?= base_url() ?>contact">Contact Us</a></li>
 							</ul>
 						</div>
 						<div class="col-2 text-end">
