@@ -22,25 +22,26 @@
 					<div class="address mt-4">
 						<i class="icon-room"></i>
 						<h4 class="mb-2">Location:</h4>
-						<p>69 Bioskop Kaba Street</p>
+						<p>Jl. Sumur Batu 6 No.3, RT.14/RW.5, Cempaka Baru, Kemayoran, Central Jakarta City, Jakarta 10640</p>
 					</div>
 					<div class="open-hours mt-4">
 						<i class="icon-clock-o"></i>
 						<h4 class="mb-2">Open Hours:</h4>
 						<p>
-							Sunday-Friday:<br>
-							11:00 AM - 2300 PM
+							Monday-Friday:<br>
+							08:00 AM - 17:00 PM
 						</p>
 					</div>
 					<div class="email mt-4">
 						<i class="icon-envelope"></i>
 						<h4 class="mb-2">Email:</h4>
-						<p>apak@join.com</p>
+						<p>peters@pst.co.id</p>
 					</div>
 					<div class="phone mt-4">
 						<i class="icon-phone"></i>
 						<h4 class="mb-2">Call:</h4>
-						<p>+62 852 2580 0025</p>
+						<p>Phone 	: +62 21 4204626</p>
+						<p>Hotline	: +62 21 50919968</p>
 					</div>
 				</div>
 			</div>

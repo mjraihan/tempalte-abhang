@@ -18,7 +18,7 @@
 
 	<script src="<?= THEMES_SITE ?>/js/bootstrap.bundle.min.js"></script>
 	<script src="<?= THEMES_SITE ?>/js/jquery-2.2.4.min.js"></script>
-	<title>PT Apak Sahajatra - <?= $title; ?></title>
+	<title>PT. Prima Sistem Terpadu - <?= $title; ?></title>
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="<?= THEMES_SITE ?>/images/favicon/apple-touch-icon.png">
@@ -73,7 +73,7 @@
 							</a>
 							<a href="#" class="call-us d-flex align-items-center">
 								<span class="icon-phone"></span>
-								<span>+62852-2580-0025</span>
+								<span>+62 21 4204626</span>
 							</a>
 						</div>
 					</div>
@@ -92,7 +92,8 @@
 				<div class="col-lg-4">
 					<div class="widget">
 						<h3>Contact</h3>
-						<address>69 Bioskop Kaba Street</address>
+						<address>Jl. Sumur Batu 6 No.3, RT.14/RW.5, Cempaka Baru, 
+						Kemayoran, Central Jakarta City, Jakarta 10640</address>
 						<ul class="list-unstyled links">
 							<li><a href="tel://+6221-4204-626">+62 21 4204626</a></li>
 							<li><a href="tel://+6221-5091-9968">+62 21 50919968</a></li>
