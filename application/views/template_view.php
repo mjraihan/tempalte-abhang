@@ -94,8 +94,8 @@
 						<h3>Contact</h3>
 						<address>69 Bioskop Kaba Street</address>
 						<ul class="list-unstyled links">
-							<li><a href="tel://+62852-2580-0025">+62852-2580-0025</a></li>
-							<li><a href="tel://+62852-2580-0025">+62852-2580-0025</a></li>
+							<li><a href="tel://+6221-4204-626">+62 21 4204626</a></li>
+							<li><a href="tel://+6221-5091-9968">+62 21 50919968</a></li>
 						</ul>
 					</div> 
 				</div> 
