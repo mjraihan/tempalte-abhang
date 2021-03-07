@@ -6,6 +6,7 @@ class MY_Controller extends CI_Controller {
         parent::__construct();
         
         define('THEMES_SITE' , site_url('theme'));
+        define('THEMES_DASHBOARD' , site_url('theme/dashboard_theme'));
 
     }
 }
